@@ -1,0 +1,108 @@
+h1{
+    text-align: center;
+    margin: 100px auto;
+    max-width: 550px;
+    margin-bottom: 20px;
+    position:relative;
+    color:green;
+}
+h1::before{
+    background-color:rgb(171, 174, 177);
+    display: block;
+    width: 120px;
+    height: 2px;
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+    
+}
+h1::after{
+    background-color:rgb(171, 174, 177);
+    display: block;
+    width: 120px;
+    height: 2px;
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.box{
+    border: 2px solid green;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: rgb(224, 250, 241);
+}
+.top{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.top .pair{
+    margin-left: 10px;
+    
+}
+.top .dk{
+    margin-left: 35px;
+}
+.top .of{
+    margin-left: 250px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 55px;
+    margin-top: 15px;
+    visibility: hidden;
+    
+   
+}
+.box :hover + .flex-container{
+    visibility: visible;
+    
+
+}
+
+
+.ff1 {
+    padding-right: 5px;
+}
+    select{
+        margin-bottom: 10px;
+        width: 70px;
+    }
+    .pd{
+        display: flex;
+        margin-left: 600px;
+        align-items:center;
+        
+    }
+    .pd p{
+        color: green;
+        margin-left: 0;
+        
+    }
+    .pd .td{
+        padding: 50px;
+    }
+    .btn{
+        display: flex;
+        text-align: center;
+        padding-left: 500px;
+         }
+         button{
+            background-color: green;
+            color: aliceblue;
+            border-radius: 7%;
+            width: 500px;
+            height: 30px;
+         }
